@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.thymeleaf.thymeleaf2.domain.User;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
@@ -15,4 +16,10 @@ public class UserController {
         modelo.addAttribute("user", user);
         return "selection/index";
     }
+
+    @GetMapping("message-expression")
+    public String getMethodName(Model model) {
+        return "message/index";
+    }
+
 }
