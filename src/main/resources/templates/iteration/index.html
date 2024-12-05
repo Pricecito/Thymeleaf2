@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="2">
+      <tr th:each="user, userState : ${users}">
+        <td th:text="${userState.size}">Nombre</td>
+        <td th:text="${userState.index}">Edad</td>
+        <td th:text="${userState.odd}">Edad</td>
+        <td th:text="${userState.even}">Edad</td>
+        <td th:text="${userState.first}">Edad</td>
+        <td th:text="${userState.last}">Edad</td>
+        <td th:text="${userState.count}">Edad</td>
+        <td th:text="${user.id}">ID</td>
+        <td th:text="${user.name}">Nombre</td>
+        <td th:text="${user.email}">Correo</td>
+        <td th:text="${user.password}">Correo</td>
+      </tr>
+    </table>
+  </body>
+</html>

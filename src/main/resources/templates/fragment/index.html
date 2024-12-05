@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FRAGMENT EXPRESSION</title>
+  </head>
+  <body>
+    <h1>Fragment Expressions</h1>
+    <!--replace reemplaza el div actual con el div de fragmento
+    en el caso de insert inserta dentro del div el fragmento
+    -->
+    <div th:replace="~{common/header :: header}"></div>
+    <div>
+      <h1>Page Body</h1>
+    </div>
+    <div th:replace="~{common/footer :: footer}"></div>
+  </body>
+</html>
