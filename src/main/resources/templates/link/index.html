@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link th:href="@{/css/demo.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>EPRESIONES DE ENLACE</h1>
+    <a th:href="@{/selection-expression}">SLECCION DE EXPRESIONES</a>
+    <a th:href="@{link-expression/{id}(id=${id})}">AUMENTAR UN ID A LA RUTA</a>
+  </body>
+</html>

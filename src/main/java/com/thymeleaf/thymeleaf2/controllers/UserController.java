@@ -18,8 +18,14 @@ public class UserController {
     }
 
     @GetMapping("message-expression")
-    public String getMethodName(Model model) {
+    public String messageExpression(Model model) {
         return "message/index";
+    }
+
+    @GetMapping("link-expression")
+    public String linkExpression(Model model) {
+        model.addAttribute("id", 1);
+        return "link/index";
     }
 
 }
