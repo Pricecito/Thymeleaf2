@@ -46,4 +46,14 @@ public class UserController {
         return "iteration/index";
     }
 
+    @GetMapping("conditional")
+    public String conditionalExpression(Model model) {
+        List<User> users = new ArrayList<>();
+        users.add(new User(1, "Ramesh", "ramesh@gmail.com", "125"));
+        users.add(new User(2, "John", "john@gmail.com", "123"));
+        users.add(new User(3, "Mike", "mike@gmail.com", "456"));
+        model.addAttribute("users", users);
+        return "conditional/index";
+    }
+
 }
